@@ -5,113 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5cc0538-fa39-4836-800a-7cd9be0fbe2c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeception.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_03_09_2024__23_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_12_09_2024__22_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/twitter-alike-app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/controllers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/controllers/hello_controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/phpunit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/asset_mapper.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/debug.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/http_discovery.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/mailer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/messenger.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/monolog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/notifier.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/validator.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/importmap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command/CreateUserCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/FollowerController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/LikeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/MicroPostController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/ProfileController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/SettingsProfileController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Comment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/MicroPost.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/UserProfile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/CommentType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/MicroPostType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/UserProfileType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/CommentRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/MicroPostRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/UserProfileRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/EmailVerifier.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/UserChecker.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/Voter/MicroPostVoter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/follower/_follow_button.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/follower/_follower_list.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/form/fields.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/hello/_message.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/hello/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/hello/show_one.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/micro_post/_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/micro_post/_post.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/micro_post/_post_list.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/micro_post/add.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/micro_post/comment.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/micro_post/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/micro_post/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/micro_post/show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile/_profile_header.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile/_profile_tabs.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile/followers.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile/follows.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/profile/show.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/confirmation_email.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/settings_profile/_profile_form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/settings_profile/profile.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/shared/_tab.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/shared/_tabs.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translations/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/console" beforeDir="false" afterPath="$PROJECT_DIR$/bin/console" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/MicroPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/MicroPostRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,7 +239,7 @@
       <workItem from="1726080695782" duration="1503000" />
       <workItem from="1726166270590" duration="3105000" />
       <workItem from="1726172590780" duration="1398000" />
-      <workItem from="1726408510337" duration="7836000" />
+      <workItem from="1726408510337" duration="8902000" />
     </task>
     <servers />
   </component>

@@ -4,22 +4,27 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Entity\UserProfile;
+use App\Form\ProfileImageType;
 use App\Form\UserProfileType;
 use App\Repository\UserRepository;
+use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Component\HttpFoundation\File\Exception\FileException;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Security\Http\Attribute\IsGranted;
+use Symfony\Component\String\Slugger\SluggerInterface;
 
 class SettingsProfileController extends AbstractController
 {
     #[Route('/settings/profile', name: 'app_settings_profile')]
     #[IsGranted('IS_AUTHENTICATED_FULLY')]
     public function profile(
-        Request $request,
+        Request        $request,
         UserRepository $users
-    ): Response {
+    ): Response
+    {
         /** @var User $user */
         $user = $this->getUser();
         $userProfile = $user->getUserProfile() ?? new UserProfile();
@@ -46,6 +51,61 @@ class SettingsProfileController extends AbstractController
 
         return $this->render(
             'settings_profile/profile.html.twig',
+            [
+                'form' => $form->createView(),
+            ]
+        );
+    }
+
+    #[Route('/settings/profile-image', name: 'app_settings_profile_image')]
+    #[IsGranted('IS_AUTHENTICATED_FULLY')]
+    public function profileImage(
+        Request $request,
+        SluggerInterface $slugger,
+        EntityManagerInterface $entityManager
+    ): Response
+    {
+        $form = $this->createForm(ProfileImageType::class);
+        /** @var User $currentUser */
+        $currentUser = $this->getUser();
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $profileImageFile = $form->get('profileImage')->getData();
+            if ($profileImageFile) {
+                $originalFileName = pathinfo(
+                    $profileImageFile->getClientOriginalName(),
+                    PATHINFO_FILENAME
+                );
+
+                $safeFilename = $slugger->slug($originalFileName);
+
+                $newFileName = $safeFilename . '-' . uniqid() . '.' . $profileImageFile->guessExtension();
+
+                try {
+                    $profileImageFile->move(
+                        $this->getParameter('profile_images_directory'),
+                        $newFileName
+                    );
+                } catch (FileException $e) {
+                }
+
+                $profile = $currentUser->getUserProfile() ?? new UserProfile();
+                $currentUser->setUserProfile($profile);
+                $profile->setImage($newFileName);
+
+                $entityManager->persist($currentUser);
+                $entityManager->flush();
+
+                $this->addFlash('Success', 'Your profile image was uploaded.');
+
+                return $this->redirectToRoute('app_settings_profile_image');
+            }
+        }
+
+        return $this->render(
+            'settings_profile/profile_image.html.twig',
             [
                 'form' => $form->createView(),
             ]
